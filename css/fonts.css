@@ -30,8 +30,8 @@
   src: url(../fonts/code-2-of-5-interleaved/code25I.ttf);
 }
 @font-face {
-  font-family: Bastliga one;
-  src: url(../fonts/fonts/bastliga-one/Bastliga\ One.otf);
+  font-family: bastliga one;
+  src: url(../fonts/fonts/bastliga-one/Bastliga\ One.ttf);
 }
 @font-face {
   font-family: playfair display;
@@ -63,16 +63,13 @@
   font-style: italic;
 }
 
-h1 {
-  font-family: brillant;
+.samtekst h1 {
+  font-family: bastliga one;
   text-align: center;
 
   color: rgba(0, 0, 0, 8);
   padding: 1em;
   margin: 2em 0 0 0;
-}
-.samtekst h1 {
-  font-family: ba;
 }
 
 h2 {
