@@ -34,3 +34,8 @@ header {
   display: flex;
   justify-content: right;
 }
+
+/*      farve baggrund til section */
+.bon {
+  background-color: #2e0d14;
+}

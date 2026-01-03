@@ -34,6 +34,14 @@
   src: url(../fonts/fonts/bastliga-one/Bastliga\ One.ttf);
 }
 @font-face {
+  font-family: blow brush;
+  src: url(../fonts/fonts/blowbrush/blowbrush.ttf);
+}
+@font-face {
+  font-family: moralana;
+  src: url(../fonts/fonts/moralana/Moralana\ DEMO.otf);
+}
+@font-face {
   font-family: playfair display;
   @import: url ("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ramabhadra&display=swap");
 }
@@ -62,18 +70,18 @@
   font-weight: 700;
   font-style: italic;
 }
-
+/* 
 .samtekst h1 {
-  font-family: bastliga one;
+  font-family: blow brush;
   text-align: center;
 
   color: rgba(0, 0, 0, 8);
   padding: 1em;
   margin: 2em 0 0 0;
-}
+} */
 
 h2 {
-  font-family: playfair display;
+  font-family: moralana;
   text-align: center;
   color: rgb(106 41 49);
   padding: 10px;
@@ -86,12 +94,12 @@ h2 {
 }
 
 h3 {
-  font-family: Montserrat;
+  font-family: brillant;
   text-align: center;
   color: rgba(0, 0, 0, 8);
 }
 p {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Montserrat;
   text-align: center;
   color: rgba(0, 0, 0, 8);
   max-width: 80ch;
