@@ -9,24 +9,27 @@
 header {
   top: 0;
   width: 100%;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   background-color: transparent;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); giver en underlig skygge*/
   object-fit: cover;
 }
 
 /*            SVG logos STYLING AND SIZE */
 
-.logo img {
+.logo svg {
   width: 100px;
   height: 100px;
+  object-position: left;
+  padding: 0 0 0 1em;
 }
 
-.wax {
-  width: 500px;
-  height: 300px;
+/*        specifik indstilling til første billede på forside */
+
+.forsidefoto img {
+  height: 400px;
   margin: auto;
   display: block;
   align-content: center;
@@ -34,21 +37,21 @@ header {
   max-width: fit-content;
 }
 
-.wax img {
-  width: 60%;
-  height: 60%;
+.forsidefoto img {
+  width: 100%;
 }
 
 nav {
   display: flex;
   align-items: center;
+  color: #ffffff;
 }
 
 .menu {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 1em;
 }
 
 .menu li {
@@ -94,12 +97,12 @@ nav {
 .burger {
   display: none;
 }
-@media screen and (width < 800px) {
+@media screen and (max-width: 800px) {
   .menu {
     display: none;
   }
   .burger {
-    display: block;
+    display: flex;
     background-color: transparent;
     border: 0;
   }
@@ -120,7 +123,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #615f5f;
+    background-color: #000;
     position: absolute;
     top: 94px;
     left: 0;
@@ -165,29 +168,23 @@ nav {
   font-family: blow brush;
   z-index: 1;
   margin: auto;
+  padding: 1em;
 }
 .samtekst h1 {
   margin-bottom: 0;
 }
 
-/*          STYLING OF THE SHOPPING ICON       */
-#cart-icon {
-  font-size: 30px;
-  color: #ffffff;
-  cursor: pointer;
-  display: flex;
-}
-
 /*                styling of second image            */
 
-img {
+/* img {
   display: block;
-  margin: 0 auto 2em; /* tilføjet til auto setting, så billede ikke går ud over fældt. */
-  max-width: fit-content;
+  margin: 0 auto 2em;  */
+/* tilføjet til auto setting, så billede ikke går ud over fældt. */
+/* max-width: fit-content;
   max-width: 100%;
   height: auto;
-}
-
+} */
+/* 
 #second img {
   width: 400px;
 }
@@ -195,4 +192,4 @@ img {
 #third img {
   width: 700px;
   margin-top: 2em;
-}
+} */
