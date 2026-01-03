@@ -78,7 +78,8 @@ nav {
 }
 
 .menu a:hover {
-  color: #151414;
+  background: white;
+  color: black;
 }
 
 .burger {
