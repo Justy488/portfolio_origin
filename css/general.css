@@ -20,3 +20,17 @@
   object-position: center;
   display: block;
 }
+
+/*        Header placering */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: transparent;
+  padding-top: 10px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: right;
+}

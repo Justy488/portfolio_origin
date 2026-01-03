@@ -169,6 +169,10 @@ nav {
   font-size: 4rem;
   font-family: "Merriweather", serif;
   z-index: 1;
+  margin: auto;
+}
+.samtekst h1 {
+  margin-bottom: 0;
 }
 
 /*          STYLING OF THE SHOPPING ICON       */
@@ -187,7 +191,6 @@ img {
   max-width: fit-content;
   max-width: 100%;
   height: auto;
-  border-radius: 2em;
 }
 
 #second img {
