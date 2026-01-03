@@ -29,7 +29,7 @@ header {
 /*        specifik indstilling til første billede på forside */
 
 .forsidefoto img {
-  height: 400px;
+  height: 600px;
   margin: auto;
   display: block;
   align-content: center;
@@ -121,6 +121,16 @@ nav {
 .burger {
   display: none;
 } */
+
+/*      grid fordeling */
+
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* lidt mellemrum til kolonnen*/
+  align-items: center;
+}
+
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
