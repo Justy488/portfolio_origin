@@ -39,8 +39,9 @@ h1 {
   color: #fff;
   top: 10px;
   left: 20px;
-  font-size: clamp(20px, 10vw, 80px);
-  font-family: "Orelo-sw-db", serif;
+  font-size: clamp(40px, 8vw, 80px);
+  font-family: moralana, serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .card-image {
@@ -56,9 +57,9 @@ h1 {
   color: #fff;
   bottom: 20px;
   left: 20px;
-  font-size: clamp(20px, 3vw, 30px);
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  font-family: "Orelo-sw-db", serif;
+  font-size: clamp(18px, 3vw, 24px);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  font-family: Montserrat, serif;
   text-align: left;
   max-width: 80%;
 }
@@ -67,18 +68,22 @@ h1 {
   transform: translateZ(0px) translateY(0px);
   z-index: 5;
 }
+
 .card:nth-child(2) {
   transform: translateZ(-50px) translateY(-10px);
   z-index: 4;
 }
+
 .card:nth-child(3) {
   transform: translateZ(-100px) translateY(-20px);
   z-index: 3;
 }
+
 .card:nth-child(4) {
   transform: translateZ(-150px) translateY(-30px);
   z-index: 2;
 }
+
 .card:nth-child(5) {
   transform: translateZ(-200px) translateY(-40px);
   z-index: 1;
@@ -107,4 +112,28 @@ button:hover {
 h3 {
   color: #666;
   margin-top: 20px;
+}
+
+/* Desktop cards - større */
+@media screen and (min-width: 801px) {
+  .card-container {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+/* Mobil cards - mindre */
+@media screen and (max-width: 800px) {
+  .card-container {
+    width: 280px;
+    height: 380px;
+  }
+
+  .card-number {
+    font-size: 50px;
+  }
+
+  .card-description {
+    font-size: 16px;
+  }
 }
