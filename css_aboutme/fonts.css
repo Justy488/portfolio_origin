@@ -122,13 +122,12 @@ p {
   text-align: center;
   color: rgba(0, 0, 0, 8);
   max-width: 80ch;
-
-  padding: 0.5em 1em;
+  padding: 0.5em 2em;
   margin: 0 auto 1.5em;
   font-size: 1.1rem;
   color: rgb(1, 1, 2);
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
 }
 .lys p {
   font-family: Montserrat;

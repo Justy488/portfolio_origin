@@ -2,3 +2,16 @@
   min-width: fit-content;
   padding: 2em;
 }
+
+.box02 {
+  height: 100%;
+  margin: auto;
+  display: block;
+  align-content: center;
+
+  max-width: fit-content;
+}
+
+.box02 img {
+  width: 100%;
+}
