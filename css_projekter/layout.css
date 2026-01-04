@@ -1,13 +1,16 @@
-.grid_1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 main {
   margin: 10px;
+}
+
+/* Projekt grid layout */
+.projekt-header {
+  text-align: center;
+}
+
+.projekt-content {
+  text-align: center;
+}
+
+.projekt-footer {
+  text-align: center;
 }

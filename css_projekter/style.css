@@ -28,15 +28,6 @@ header {
   padding: 0 0 0 1em;
 }
 
-/*        specifik indstilling til første billede på forside */
-
-.forsidefoto img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -95,8 +86,6 @@ nav {
   background-color: #ffffff;
   transition: 0.2s linear;
 }
-
-/*      grid fordeling */
 
 /* MOBIL VERSION - Vertikal stabling (standard) */
 .grid_2-1 {
@@ -172,8 +161,72 @@ nav {
   }
 }
 
-/*      NY MENU STYLING  */
+/* Projekt Titel */
+.projekt-titel {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-family: Arial, sans-serif; /* Skift til moralana eller din ønskede font */
+}
 
+/* Projekt Undertitel */
+.projekt-undertitel {
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.9;
+  font-family: "Courier New", Courier, monospace; /* Skift til din ønskede font */
+}
+
+/* Projekt Beskrivelse */
+.projekt-beskrivelse {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif; /* Skift til Montserrat eller din ønskede font */
+}
+
+/* Projekt Tema (bunden) */
+.projekt-tema {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: Arial, sans-serif; /* Skift til brillant eller din ønskede font */
+}
+
+/*  mediaq for telefon */
+
+@media (max-width: 768px) {
+  .projekt-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .projekt-titel {
+    font-size: 1.2rem;
+  }
+
+  .projekt-undertitel {
+    font-size: 0.8rem;
+  }
+
+  .projekt-beskrivelse {
+    font-size: 0.85rem;
+  }
+
+  .projekt-tema {
+    font-size: 1rem;
+  }
+
+  .projekt-overlay {
+    padding: 15px;
+  }
+}
+
+/*      NY MENU STYLING  */
+/* 
 .hero {
   position: relative;
   min-height: 70vh;
@@ -195,10 +248,10 @@ nav {
   object-fit: cover;
   object-position: center;
   filter: brightness(0.7);
-}
+} */
 
 /* overlay som rigtigt element */
-.overlay {
+/* .overlay {
   display: none;
   position: absolute;
   inset: 0;
@@ -229,4 +282,4 @@ nav {
   .hero h1 {
     font-size: 3rem;
   }
-}
+} */
