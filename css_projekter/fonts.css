@@ -107,12 +107,16 @@ h1 {
   color: white;
 }
 
-h3 {
+h2 {
   font-family: brillant;
   text-align: center;
   color: rgba(0, 0, 0, 8);
 }
-.andenlys h3 {
+h3 {
+  font-family: Inter;
+  color: aliceblue;
+}
+.andenlys h2 {
   font-family: brillant;
   text-align: center;
   color: rgba(255, 255, 255, 8);

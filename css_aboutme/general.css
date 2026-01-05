@@ -89,7 +89,7 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
-    padding: 60px 40px;
+    padding: 20px 40px;
   }
 
   /* Første sektion - billede til venstre, tekst til højre */

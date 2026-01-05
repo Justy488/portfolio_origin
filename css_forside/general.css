@@ -41,8 +41,22 @@ header {
 }
 
 /* Sections med padding */
-section {
+/* section {
   padding: 60px 20px;
+} */
+/*    til min proces knap info */
+.tilbage-link {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: transparent;
+  border: solid 1.5px;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 800px) {
