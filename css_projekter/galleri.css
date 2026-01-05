@@ -17,6 +17,10 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: transform 0.3s ease;
+
+  text-decoration: none;
+  color: white;
+  display: block;
 }
 
 .projekt-item:hover {

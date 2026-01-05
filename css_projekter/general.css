@@ -214,4 +214,53 @@ section {
     text-align: center;
     font-size: 1rem;
   }
+  /*    styling af projekt knapper */
+  .projekt-item {
+    height: 300px;
+  }
+
+  .projekt-detail {
+    padding: 60px 20px;
+  }
+
+  .tilbage-link {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+/* Smooth scroll når man klikker på links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styling til projekt-sektioner */
+.projekt-detail {
+  padding: 80px 20px;
+}
+
+/* Tilbage til projekter knap */
+.tilbage-link {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+
+.tilbage-link:hover {
+  background-color: #764ba2;
+}
+
+/* Mørk knap på hvid baggrund */
+.hvid-baggrund .tilbage-link {
+  background-color: #2e0d14;
+}
+
+.hvid-baggrund .tilbage-link:hover {
+  background-color: #5a1f2a;
 }
