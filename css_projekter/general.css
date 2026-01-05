@@ -246,11 +246,12 @@ html {
   padding: 80px 20px;
 }
 
-/* Tilbage til projekter knap */
+/* Tilbage til projekter knap to forskellige */
 .tilbage-link {
   display: inline-block;
   padding: 15px 40px;
-  background-color: #667eea;
+  background-color: transparent;
+  border: solid 1.5px;
   color: white;
   text-decoration: none;
   border-radius: 30px;
