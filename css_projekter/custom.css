@@ -1,0 +1,29 @@
+.box01 img {
+  padding: 2em;
+}
+
+.box02 {
+  height: 100%;
+  margin: auto;
+  display: block;
+  align-content: center;
+
+  max-width: fit-content;
+}
+
+.box02 img {
+  width: 100%;
+}
+
+.box03 {
+  height: 100%;
+  margin: 0;
+  display: block;
+  align-content: center;
+
+  max-width: fit-content;
+}
+
+.box03 img {
+  width: 50%;
+}

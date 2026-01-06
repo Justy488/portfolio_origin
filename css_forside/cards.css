@@ -1,0 +1,60 @@
+/* Container for alle projektkortene */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+  gap: 20px; /* Mellemrum mellem kortene */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Styling af hvert kort */
+.card {
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Nummer i øverste venstre hjørne */
+.card-number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 48px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Billedet i kortet */
+.card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Beskrivelse under billedet */
+.card-description {
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  background: white;
+}
+
+/* Responsivt design */
+@media (max-width: 900px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner på tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr; /* 1 kolonne på mobil */
+  }
+}

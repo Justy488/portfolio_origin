@@ -1,0 +1,99 @@
+.box01 img {
+  padding: 2em;
+}
+
+.box02 {
+  height: 100%;
+  margin: auto;
+  display: block;
+  align-content: center;
+
+  max-width: fit-content;
+}
+
+.box02 img {
+  width: 100%;
+}
+
+.box03 {
+  height: 100%;
+
+  display: block;
+  align-content: center;
+  justify-content: center;
+  max-width: fit-content;
+}
+
+.box03 img {
+  width: 100%;
+}
+
+/* specifik for portræt billede sektion */
+
+.container {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.book-cover {
+  background-color: #d4d4d4;
+  width: 280px;
+  height: 400px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.signature-container {
+  width: 100px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signature {
+  width: 100%;
+  height: auto;
+}
+
+.bottom-section {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.quote {
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .book-cover {
+    width: 240px;
+    height: 340px;
+  }
+
+  .signature-container {
+    width: 100px;
+    height: 150px;
+  }
+
+  .bottom-section {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .quote {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,186 @@
+/*          PROJEKT SIDE GENERAL STYLING      */
+
+@font-face {
+  font-family: brillant;
+  src: url(../fonts/fonts/brillant/brillant.otf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/inter/Inter-Italic.otf);
+}
+
+@font-face {
+  font-family: Alumni Sans Pinstripe, stroke;
+  src: url(../fonts/Alumni_Sans_Pinstripe\BBH_Sans_Bartle\Radio_Canada_Big\Ramabhadra/);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/fonts/montserrat/Montserrat-Medium.otf);
+}
+
+/* Hvid baggrund styling */
+.hvid-baggrund h1,
+.hvid-baggrund p {
+  color: #000000;
+}
+
+/* Desktop specifik styling for grid */
+@media screen and (min-width: 801px) {
+  /* Første sektion - billede til venstre, tekst til højre */
+  .grid_2-1:nth-of-type(1) .forsidefoto {
+    order: 1;
+  }
+
+  .grid_2-1:nth-of-type(1) > div:last-child {
+    order: 2;
+  }
+
+  /* Anden sektion - tekst til venstre, billede til højre */
+  .grid_2-1:nth-of-type(2) > p {
+    order: 1;
+  }
+
+  .grid_2-1:nth-of-type(2) .box02 {
+    order: 2;
+  }
+
+  /* Tredje sektion - tekst til venstre, billede til højre */
+  .grid_2-1:nth-of-type(3) > p {
+    order: 1;
+  }
+
+  .grid_2-1:nth-of-type(3) .box03 {
+    order: 2;
+  }
+}
+
+/* Typografi */
+h1 {
+  font-family: moralana;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 60px 20px 20px;
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+h2 {
+  font-family: brillant;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+h3 {
+  font-family: Alumni Sans Pinstripe, stroke;
+  color: aliceblue;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.minibox h3 {
+  font-family: Alumni Sans Pinstripe, stroke;
+  color: rgb(16, 16, 17);
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.whitebox h2 {
+  font-family: brillant;
+  text-align: center;
+  color: rgba(10, 9, 9, 0.9);
+  padding: 20px;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.andenlys h2 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+p {
+  font-family: Montserrat;
+  color: rgb(203, 203, 204);
+  max-width: 70ch;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* Desktop - centreret tekst */
+@media screen and (min-width: 801px) {
+  p {
+    text-align: left;
+  }
+
+  .beskrivelse p {
+    text-align: center;
+  }
+}
+
+.box02,
+.box03 {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.box02 img,
+.box03 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Sections med padding til det handler om mig */
+section {
+  padding: 30px 20px;
+}
+
+/* Mobil specifik styling */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    padding: 40px 20px 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /*    styling af projekt knapper */
+  .projekt-item {
+    height: 300px;
+  }
+
+  .projekt-detail {
+    padding: 60px 20px;
+  }
+
+  .tilbage-link {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+
+/* Styling til projekt-sektioner */
+.projekt-detail {
+  padding: 40px 20px;
+}
