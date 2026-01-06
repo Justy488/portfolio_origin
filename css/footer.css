@@ -30,17 +30,6 @@ footer {
   opacity: 0.8;
 }
 
-.footer-logo {
-  display: flex;
-  align-items: center;
-}
-
-.footer-logo svg {
-  width: 80px;
-  height: 80px;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-}
-
 @media (max-width: 768px) {
   footer {
     flex-direction: column-reverse;
