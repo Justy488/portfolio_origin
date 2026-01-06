@@ -5,7 +5,7 @@
 
 h1 {
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .card-container {
@@ -55,7 +55,7 @@ h1 {
   position: absolute;
   z-index: 10;
   color: #fff;
-  bottom: 20px;
+  bottom: 40px;
   left: 20px;
   font-size: clamp(18px, 3vw, 24px);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
