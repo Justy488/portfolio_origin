@@ -40,10 +40,6 @@ header {
   background-color: #2e0d14;
 }
 
-/* Sections med padding */
-/* section {
-  padding: 60px 20px;
-} */
 /*    til min proces knap info */
 .tilbage-link {
   display: inline-block;
@@ -57,6 +53,11 @@ header {
   font-weight: 600;
   font-size: 1.1rem;
   margin-top: 40px;
+}
+
+/* tilføjet ny klasse til knap og p på index bund.  */
+.knap-center {
+  text-align: center;
 }
 
 @media screen and (max-width: 800px) {
