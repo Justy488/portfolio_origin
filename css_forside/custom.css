@@ -24,16 +24,16 @@
   justify-content: center;
   align-content: center;
 }
-
+/* 
 .box02 img {
   width: 80%;
   height: auto;
   border-radius: 8px;
-}
+} */
 
 /* Desktop billeder */
 @media screen and (min-width: 801px) {
   .box02 img {
-    width: 60%;
+    width: 100%;
   }
 }

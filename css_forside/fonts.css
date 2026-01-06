@@ -79,7 +79,7 @@ h1 {
   color: rgb(255, 255, 255);
   padding: 60px 20px 20px;
   margin: 0;
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .hvid h1 {

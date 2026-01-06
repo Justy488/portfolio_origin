@@ -183,6 +183,9 @@ p {
     text-align: left;
     /* margin: 0;  kommenteret ud, så den ikke forstyrer portfolio p*/
   }
+  .beskrivelse p {
+    text-align: center;
+  }
 }
 
 /* Billede styling */
@@ -217,7 +220,7 @@ p {
 
 /* Sections med padding til det handler om mig */
 section {
-  padding: 60px 20px;
+  padding: 30px 20px;
 }
 
 /* Mobil specifik styling */
@@ -276,7 +279,7 @@ html {
 
 /* Styling til projekt-sektioner */
 .projekt-detail {
-  padding: 80px 20px;
+  padding: 40px 20px;
 }
 
 /* Tilbage til projekter knap to forskellige */
