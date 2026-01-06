@@ -1,4 +1,4 @@
-/*          typografi rykket       */
+/*          PROJEKT SIDE GENERAL STYLING      */
 
 @font-face {
   font-family: brillant;
@@ -19,86 +19,15 @@
   font-family: Montserrat;
   src: url(../fonts/fonts/montserrat/Montserrat-Medium.otf);
 }
-/* Reset og basis styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background-color: #2e0d14;
-}
-
-/* Hero sektion med overlay tekst */
-.hero {
-  position: relative;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.hero-section {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.hero-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  filter: brightness(0.7);
-}
-
-.hero h1 {
-  position: relative;
-  z-index: 10;
-  color: white;
-  font-size: clamp(3rem, 10vw, 7rem);
-  font-family: blow brush;
-  text-align: center;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-  padding: 1em;
-}
-
-/* Baggrundsfarver */
-.bon {
-  background-color: #2e0d14;
-}
-.hvid-baggrund {
-  background-color: #ffffff;
-}
-
+/* Hvid baggrund styling */
 .hvid-baggrund h1,
 .hvid-baggrund p {
   color: #000000;
 }
 
-/* grid til mobilversionen */
-.grid_2-1 {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* DESKTOP VERSION - 2 kolonner side om side */
+/* Desktop specifik styling for grid */
 @media screen and (min-width: 801px) {
-  .grid_2-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-    padding: 60px 40px;
-  }
-
   /* Første sektion - billede til venstre, tekst til højre */
   .grid_2-1:nth-of-type(1) .forsidefoto {
     order: 1;
@@ -144,16 +73,19 @@ h2 {
   padding: 20px;
   font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
+
 h3 {
   font-family: Alumni Sans Pinstripe, stroke;
   color: aliceblue;
   font-size: clamp(1rem, 2vw, 2rem);
 }
+
 .minibox h3 {
   font-family: Alumni Sans Pinstripe, stroke;
   color: rgb(16, 16, 17);
   font-size: clamp(1rem, 2vw, 2rem);
 }
+
 .whitebox h2 {
   font-family: brillant;
   text-align: center;
@@ -181,25 +113,11 @@ p {
 @media screen and (min-width: 801px) {
   p {
     text-align: left;
-    /* margin: 0;  kommenteret ud, så den ikke forstyrer portfolio p*/
   }
+
   .beskrivelse p {
     text-align: center;
   }
-}
-
-/* Billede styling */
-.forsidefoto {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.forsidefoto img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
 }
 
 .box02,
@@ -225,14 +143,6 @@ section {
 
 /* Mobil specifik styling */
 @media screen and (max-width: 800px) {
-  .hero {
-    min-height: 50vh;
-  }
-
-  .hero h1 {
-    font-size: 3rem;
-  }
-
   h1 {
     font-size: 2rem;
     padding: 40px 20px 20px;
@@ -241,13 +151,9 @@ section {
   h2 {
     font-size: 1.5rem;
   }
+
   h3 {
     font-size: 1rem;
-  }
-
-  .grid_2-1 {
-    gap: 30px;
-    padding: 30px 20px;
   }
 
   section {
@@ -258,6 +164,7 @@ section {
     text-align: center;
     font-size: 1rem;
   }
+
   /*    styling af projekt knapper */
   .projekt-item {
     height: 300px;
@@ -272,40 +179,8 @@ section {
     font-size: 1rem;
   }
 }
-/* Smooth scroll når man klikker på links */
-html {
-  scroll-behavior: smooth;
-}
 
 /* Styling til projekt-sektioner */
 .projekt-detail {
   padding: 40px 20px;
-}
-
-/* Tilbage til projekter knap to forskellige */
-.tilbage-link {
-  display: inline-block;
-  padding: 15px 40px;
-  background-color: transparent;
-  border: solid 1.5px;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-family: Montserrat, sans-serif;
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-top: 40px;
-}
-
-.tilbage-link:hover {
-  background-color: #764ba2;
-}
-
-/* Mørk knap på hvid baggrund */
-.hvid-baggrund .tilbage-link {
-  background-color: #2e0d14;
-}
-
-.hvid-baggrund .tilbage-link:hover {
-  background-color: #5a1f2a;
 }

@@ -68,3 +68,6 @@ header {
     padding: 40px 20px;
   }
 }
+.beskrivelse p {
+  text-align: center;
+}
