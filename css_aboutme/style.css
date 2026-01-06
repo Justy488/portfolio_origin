@@ -229,4 +229,21 @@ nav {
   .hero h1 {
     font-size: 3rem;
   }
+  .hero h1 {
+    padding: 1em 0.5em; /* Mindre padding på mobil */
+  }
+
+  .hero h1 svg {
+    max-width: 90vw; /* Maksimal 90% af skærmbredden */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* Hero SVG styling - Desktop */
+.hero h1 svg {
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }

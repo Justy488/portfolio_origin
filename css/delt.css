@@ -267,4 +267,28 @@ html {
     gap: 30px;
     padding: 30px 20px;
   }
+  .hero h1 {
+    padding: 1em 0.5em; /* Mindre padding på mobil */
+  }
+
+  .hero h1 svg {
+    max-width: 90vw; /* Maksimal 90% af skærmbredden */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* Hero SVG styling - Desktop */
+.hero h1 svg {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+/* Ekstra small mobil (under 480px) */
+@media screen and (max-width: 480px) {
+  .hero h1 svg {
+    max-width: 95vw; /* Endnu mindre på små skærme */
+  }
 }

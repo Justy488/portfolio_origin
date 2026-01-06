@@ -4,8 +4,10 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 987px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
+  box-sizing: border-box; /* Vigtigt! */
 }
 
 /* cards på projekt siden */
@@ -17,10 +19,11 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: transform 0.3s ease;
-
   text-decoration: none;
   color: white;
   display: block;
+  width: 100%;
+  box-sizing: border-box; /* Vigtigt! */
 }
 
 .projekt-item:hover {
@@ -54,4 +57,21 @@
   justify-content: space-between;
   padding: 30px;
   color: white;
+}
+
+/* Mobil version */
+@media (max-width: 768px) {
+  .projekt-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolonner på mobil */
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .projekt-item {
+    min-height: 250px;
+  }
+
+  .projekt-overlay {
+    padding: 15px;
+  }
 }
